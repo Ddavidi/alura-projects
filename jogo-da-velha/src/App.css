@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+  }
+  
+  /* Layout principal */
+  .game {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffffff10;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Tabuleiro */
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  /* Quadrados */
+  .square {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: #ffffff20;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .square:hover {
+    background-color: #ffffff40;
+    transform: scale(1.05);
+  }
+  
+  /* Status do jogo */
+  .status {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f8f8;
+  }
+  
+  /* Histórico de jogadas */
+  .game-info ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-info li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .game-info button {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .game-info button:hover {
+    background-color: #ffffff40;
+  }
+  
